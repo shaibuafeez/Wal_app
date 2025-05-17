@@ -86,5 +86,5 @@ Your site is would be live at:
 ```
 https://yourdomainname.wal.app 
 ```
-I.e your doamin name with a "wal.app" at the back
+I.e your domain name with a "wal.app" at the back
 
