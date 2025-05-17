@@ -33,20 +33,6 @@ Walrus Sites can host any static website, not just Next.js projects. Prepare you
 npm run build
 # Make sure output is set to 'export' in next.config.js
 
-# For React (Create React App)
-npm run build
-# Output will be in the 'build' directory
-
-# For Vue.js
-npm run build
-# Output will be in the 'dist' directory
-
-# For Angular
-ng build --prod
-# Output will be in the 'dist' directory
-
-# For static site generators (Hugo, Jekyll, etc.)
-# Follow the build instructions for your generator
 ```
 
 The key requirement is having a directory of static files (HTML, CSS, JS, images) that can be served directly.
