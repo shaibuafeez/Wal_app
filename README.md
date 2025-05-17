@@ -1,10 +1,3 @@
-# Sui Tools Explorer
-
-A modern, minimalist black and white tech-themed web application that educates users about Sui blockchain tools: Walrus (decentralized storage), Seal (secrets management), and Nautilus (secure off-chain computation).
-
-## About This Project
-
-This project showcases the power of Sui blockchain tools through an educational web application with a sleek, modern design. The application is built with Next.js and deployed on Walrus Sites, demonstrating the capabilities of decentralized hosting.
 
 ## Deployment on Walrus Sites: A Step-by-Step Tutorial
 
