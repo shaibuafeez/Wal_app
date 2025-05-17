@@ -30,9 +30,10 @@ Walrus Sites can host any static website, not just Next.js projects. Prepare you
 # Just use your files directly - no build step needed!
 
 # For Next.js projects
+# First, update next.config.js to include:
+# module.exports = { output: 'export', images: { unoptimized: true } }
 npm run build
-# Make sure output is set to 'export' in next.config.js
-
+# Output will be in the './out' directory
 ```
 
 The key requirement is having a directory of static files (HTML, CSS, JS, images) that can be served directly.
