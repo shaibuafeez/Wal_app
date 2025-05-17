@@ -16,79 +16,34 @@ Walrus Sites is a decentralized hosting platform on the Sui blockchain that lets
 ## Prerequisites
 
 ### Step 1: Install Sui CLI
-```bash
-# Install Sui CLI
-cargo install --locked sui
-
-# Create a new wallet if you don't have one
-sui client new-address ed25519
-```
 
 ### Step 2: Install Walrus CLI
-```bash
-# For macOS
-brew tap mystenlabs/tap
-brew install mystenlabs/tap/walrus
-
-# For other platforms
-cargo install walrus-cli
-
-# Verify installation
-walrus --version
-```
-
-### Step 3: Configure Walrus
-```bash
-# Create configuration directory
-mkdir -p ~/.config/walrus
-
-# Create a basic configuration file
-cat > ~/.config/walrus/client_config.yaml << EOL
-contexts:
-  mainnet:
-    rpc_url: https://fullnode.mainnet.sui.io:443
-    publisher_endpoint: https://publisher.mainnet.wal.app
-    aggregator_endpoint: https://aggregator.mainnet.wal.app
-    wallet_env: mainnet
-
-default_context: mainnet
-EOL
-```
 
 ## Quick Start Guide
 
-### Step 4: Build Your Website
+### Step 3: Build Your Website
 ```bash
 # For Next.js projects
 npm run build
 # Make sure output is set to 'export' in next.config.js
 ```
 
-### Step 5: Install site-builder
+### Step 4: Install site-builder
 ```bash
 # Download the right version for your system
 curl https://storage.googleapis.com/mysten-walrus-binaries/site-builder-mainnet-latest-macos-arm64 -o site-builder
 chmod +x site-builder
 ```
 
-### Step 6: Set Up site-builder Configuration
+### Step 5: Set Up site-builder Configuration
 ```bash
 mkdir -p ~/.config/walrus
 curl https://raw.githubusercontent.com/MystenLabs/walrus-sites/refs/heads/mainnet/sites-config.yaml -o ~/.config/walrus/sites-config.yaml
 ```
 
-### Step 7: Check Your Wallet
-You need:
-- At least 1.5 SUI for gas
-- About 5.5 WAL tokens for storage
-
+### Step 6: Check Your Wallet
+You need some wal and sui 
 Check with: `sui client gas`
-
-To get WAL tokens:
-```bash
-# Exchange SUI for WAL
-walrus get-wal --amount 1.0
-```
 
 ### Step 8: Deploy Your Site
 ```bash
@@ -105,23 +60,9 @@ Wait for deployment to complete. You'll get a site object ID like:
 5. Approve the transaction
 
 ### Step 10: Visit Your Site
-Your site is now live at:
+Your site is would be live at:
 ```
-https://yourdomainname.wal.app
+https://yourdomainname.wal.app 
 ```
+I.e your doamin name with a "wal.app" at the back
 
-## Troubleshooting
-- **Not enough WAL**: Get WAL tokens using `walrus get-wal --amount <amount-in-sui>`
-- **Not enough SUI**: Add more SUI to your wallet
-- **Deployment fails**: Try with fewer epochs (e.g., `--epochs 10`)
-- **Walrus CLI errors**: Check your configuration in `~/.config/walrus/client_config.yaml`
-
-## Development
-
-To run the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
