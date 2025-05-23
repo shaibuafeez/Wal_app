@@ -19,7 +19,7 @@ Walrus Sites is a decentralized hosting platform on the Sui blockchain that lets
 https://docs.sui.io/guides/developer/getting-started/sui-install
 
 ### Step 2: Install Walrus CLI
-https://seal-io.github.io/docs/cli
+https://docs.wal.app/usage/setup.html
 ## Quick Start Guide
 
 ### Step 3: Build Your Website
